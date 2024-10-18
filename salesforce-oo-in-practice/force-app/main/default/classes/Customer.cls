@@ -21,7 +21,7 @@ public class Customer {
         
         this.document = document;
         
-        this.creditAmount = 10;
+        this.creditAmount = 0;
         
         this.isBlocked = false;
         
@@ -32,7 +32,7 @@ public class Customer {
 
     public void addCredit (Decimal amount) {
 
-        this.creditAmount += amount;
+        this.creditAmount *= amount;
         System.debug( 'Amount: ' + amount );
         System.debug( 'addCredit Method' );
 
