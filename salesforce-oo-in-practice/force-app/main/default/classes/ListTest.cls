@@ -42,6 +42,8 @@ public class ListTest {
         }
 
         System.debug('The size of the new list: ' + accounts.size());
+        
+        System.debug('Accounts list is empty? ' + accounts.isEmpty());
 
         return accounts;
 
