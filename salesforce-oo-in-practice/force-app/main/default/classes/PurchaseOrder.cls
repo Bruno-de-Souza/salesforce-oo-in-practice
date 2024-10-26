@@ -28,7 +28,6 @@ public class PurchaseOrder {
 
     }
 
-
     public PurchaseOrder(String purchasedOrder
                        , Account account
                        , Address billingAddress) {
@@ -55,7 +54,6 @@ public class PurchaseOrder {
         this.items = items;
 
     }
-
 
     public class Address {
         
