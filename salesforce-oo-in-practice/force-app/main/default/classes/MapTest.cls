@@ -72,7 +72,13 @@ public class MapTest {
 
             }
 
-            System.debug('Accounts By State: ' + accountsByState.get(account.BillingState).add(account));
+            accountsByState.get(account.BillingState).add(account);
+
+        }
+
+        for (String states: accountsByState.keySet()) {
+
+            System.debug('Accounts: ' + states + ': ' + accountsByState.get(states));
 
         }
 
