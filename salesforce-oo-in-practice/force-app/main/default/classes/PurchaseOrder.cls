@@ -55,6 +55,12 @@ public class PurchaseOrder {
 
     }
 
+    public void addItem(Item item) {
+
+        this.items.add(item);
+
+    }
+
     public class Address {
         
         public String street;
@@ -75,6 +81,54 @@ public class PurchaseOrder {
         public String priceBookEntry;
         public Decimal quantity;
         public Decimal prices;
+
+        public Item withId(String id) {
+
+            this.id = id;
+
+            return this;
+
+        }
+
+        public Item withProductCode(String productCode) {
+
+            this.productCode = productCode;
+
+            return this;
+
+        }
+
+        public Item withDescription(String description) {
+
+            this.description = description;
+
+            return this;
+
+        }
+
+        public Item withpriceBookEntry(String priceBookEntry) {
+
+            this.priceBookEntry = priceBookEntry;
+
+            return this;
+
+        }
+
+        public Item withQuantity(Decimal quantity) {
+
+            this.quantity = quantity;
+
+            return this;
+
+        }
+
+        public Item withPrices(Decimal prices) {
+
+            this.prices = prices;
+
+            return this;
+
+        }
 
     }
 
