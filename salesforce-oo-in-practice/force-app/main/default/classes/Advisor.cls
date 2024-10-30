@@ -7,7 +7,7 @@ public class Advisor extends Employee {
     
     public Advisor () {
 
-        System.debug('Construtor Default');
+        System.debug('Inicializei ' + 'Advisor');
 
     }
 

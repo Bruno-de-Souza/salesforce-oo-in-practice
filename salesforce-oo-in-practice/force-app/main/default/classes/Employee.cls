@@ -13,7 +13,7 @@ public virtual class Employee {
 
     public Employee () {
 
-        System.debug( 'Construtor Default' );
+        System.debug( 'Inicializei ' + 'Employee' );
 
     }
 

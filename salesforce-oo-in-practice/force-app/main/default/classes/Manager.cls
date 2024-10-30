@@ -7,7 +7,7 @@ public class Manager extends Employee {
 
     public Manager () {
 
-        System.debug('Construtor Default');
+        System.debug('Inicializei ' + 'Manager');
 
     }
 
