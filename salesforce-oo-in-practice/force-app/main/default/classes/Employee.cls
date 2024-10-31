@@ -17,4 +17,13 @@ public virtual class Employee {
 
     }
 
+    public Employee (String name) {
+
+        this();
+        this.name = name;
+
+        System.debug( 'Construtor Employee com parametro de String' );
+
+    }
+
 }
