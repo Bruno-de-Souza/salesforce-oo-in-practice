@@ -21,10 +21,7 @@ public class EmployeeTest {
         Assert.isTrue(accounts.isEmpty());
         Assert.areEqual(DEFAULT_ADVISOR_SALARY, advisor.salary, 'Advisor Salary');
 
-    }
-
-    @isTest
-    static void shouldCreateManager () {
+        Assert.areNotEqual(1000, advisor.getBonus());
 
         final Decimal DEFAULT_MANAGER_SALARY = 12000;
 
@@ -39,6 +36,8 @@ public class EmployeeTest {
 
         Assert.isTrue(advisors.isEmpty());
         Assert.areEqual(DEFAULT_MANAGER_SALARY, manager.salary, 'Manager Salary');
+
+        Assert.areNotEqual(2000, manager.getBonus());
 
     }
 
