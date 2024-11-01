@@ -13,7 +13,22 @@ public virtual class Employee {
 
     public Employee () {
 
-        System.debug( 'Construtor Default' );
+        System.debug( 'Inicializei ' + 'Employee' );
+
+    }
+
+    public Employee (String name) {
+
+        this();
+        this.name = name;
+
+        System.debug( 'Construtor Employee com parametro de String' );
+
+    }
+
+    public Decimal getBonus () {
+
+        return this.salary * 1.75;
 
     }
 
