@@ -1,7 +1,7 @@
 /**
  * @author bruno.moreira
  */
-public virtual class Employee {
+public abstract class Employee {
     
     public String name;
 
@@ -22,15 +22,8 @@ public virtual class Employee {
         this();
         this.name = name;
 
-        System.debug( 'Construtor Employee com parametro de String' );
-
     }
 
-    virtual
-    public Decimal getBonus () {
-
-        return this.salary * 1.75;
-
-    }
+    public abstract Decimal getBonus ();
 
 }

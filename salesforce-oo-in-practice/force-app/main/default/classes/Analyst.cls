@@ -12,14 +12,13 @@ public class Analyst extends Employee{
     public Analyst (String name) {
 
         super(name);
-        System.debug('Construtor Analyst com parâmetro de String da classe mãe');
 
     }
 
     override
     public Decimal getBonus () {
 
-        return super.getBonus() + 7000;
+        return (this.salary * 1.75) + 7000;
 
     }
 

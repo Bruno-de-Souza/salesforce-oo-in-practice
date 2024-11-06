@@ -21,7 +21,7 @@ public class EmployeeTest {
         Assert.isTrue(advisor.accounts.isEmpty());
         Assert.areEqual(DEFAULT_ADVISOR_SALARY, advisor.salary, 'Advisor Salary');
 
-        Assert.areEqual(8750, advisor.getBonus());
+        Assert.areEqual(15000, advisor.getBonus());
 
     }
 
@@ -42,21 +42,7 @@ public class EmployeeTest {
         Assert.isFalse(manager.advisors.isEmpty());
         Assert.areEqual(DEFAULT_MANAGER_SALARY, manager.salary, 'Manager Salary');
 
-        Assert.areEqual(17500, manager.getBonus());
-
-    }
-
-    @isTest
-    public static void shouldCreateEmployee () {
-
-        Employee employee = new Employee();
-        
-        employee.name = 'Employee';
-        employee.salary = 5000;
-        System.debug('Employee: ' + employee);
-        System.debug('Employee Salary with bonus: ' + employee.getBonus());
-
-        Assert.areEqual(8750, employee.getBonus());
+        Assert.areEqual(30000, manager.getBonus());
 
     }
 
@@ -71,6 +57,29 @@ public class EmployeeTest {
         System.debug('Analsyst Salary with bonus: ' + analyst.getBonus());
 
         Assert.areEqual(15750, analyst.getBonus());
+
+    }
+
+    @isTest
+    public static void shouldCreateDirector () {
+
+        Director director = new Director();
+        director.name = 'Director';
+        director.salary = 20000;
+
+        Assert.areEqual(100000, director.getBonus());
+
+    }
+
+    @isTest
+    public static void shouldCreateicePresidentLatam () {
+
+        VicePresidentLatam vicePresidentLatam = new VicePresidentLatam();
+
+        vicePresidentLatam.name = 'Vice President Latam';
+        vicePresidentLatam.salary = 50000;
+
+        Assert.areEqual(750000, vicePresidentLatam.getBonus(), 'Vice President Salary');
 
     }
 
