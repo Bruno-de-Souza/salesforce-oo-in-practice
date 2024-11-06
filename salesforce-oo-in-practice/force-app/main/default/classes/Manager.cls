@@ -14,7 +14,6 @@ public class Manager extends Employee {
     public Manager (String name) {
 
         super(name);
-        System.debug('Construtor Manager com parâmetro de String da classe mãe');
 
     }
 
@@ -23,7 +22,12 @@ public class Manager extends Employee {
         this();
         this.advisors = advisors;
 
-        System.debug('Construtor Manager com a lista de advisors');
+    }
+
+    override
+    public Decimal getBonus() {
+
+        return this.salary * 3;
 
     }
 
