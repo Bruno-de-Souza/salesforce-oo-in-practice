@@ -5,6 +5,12 @@ public class BonusCalculator {
     
     Decimal totalBonus;
 
+    public BonusCalculator () {
+
+        this.totalBonus = 0;
+
+    }
+
     public Decimal calculateBonus (Advisor advisor) {
 
         return this.totalBonus += advisor.getBonus();

@@ -30,7 +30,7 @@ public class BonusCalculatorTest {
         calculator.calculateBonus(director);
         calculator.calculateBonus(vicePresidentLatam);
 
-        Assert.areEqual(10000, calculator.getTotal());
+        Assert.areEqual(83750.00, calculator.getTotal());
 
     }
 
