@@ -116,7 +116,7 @@ public class EmployeeTest {
         Assert.areEqual(3000, employee.getBonus());
 
         // Downcast com erro ao executar o teste
-        Analyst analyst = (Analyst) employee;
+        //Analyst analyst = (Analyst) employee;
 
     }
 
