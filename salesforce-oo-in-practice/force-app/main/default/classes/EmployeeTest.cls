@@ -84,7 +84,7 @@ public class EmployeeTest {
     }
 
     @isTest
-    public static void shouldTestUpcastAndDownCastEMployee () {
+    public static void shouldTestUpcastAndDownCastEmployee () {
 
         //Analyst analyst = new Analyst ();
         //analyst.code = '2321132';
