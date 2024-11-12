@@ -148,4 +148,35 @@ public class EmployeeTest {
 
     }
 
+    @isTest
+    public static void shouldValidateEmployee () {
+
+        Analyst analyst = new Analyst();
+        analyst.code = '123456';
+        analyst.salary = 10000;
+
+        Advisor advisor = new Advisor();
+        advisor.code = '123456';
+        advisor.salary = 10000;
+
+        Manager manager = new Manager();
+        manager.code = '123456';
+        manager.salary = 10000;
+
+        List<Validable> validables = new List<Validable>{
+
+            analyst
+            , advisor
+            , manager
+
+        };
+
+        for (Validable validable : validables) {
+            
+            Assert.isTrue(validable.isValid());
+
+        }
+
+    }
+
 }
