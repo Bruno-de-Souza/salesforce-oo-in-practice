@@ -120,4 +120,32 @@ public class EmployeeTest {
 
     }
 
+    @isTest
+    public static void shouldSortEmployeeByName () {
+
+        List<Employee> employees = new List<Employee>{
+
+            new Advisor('Advisor'),
+            new Analyst('Analyst'),
+            new Manager('Manager'),
+            new Director('Director'),
+            new VicePresidentLatam('Vice Presidente')
+
+        };
+
+        System.debug(JSON.serialize(employees));
+
+        employees.sort();
+
+        System.debug(JSON.serialize(employees));
+
+        Assert.areEqual('Advisor', employees.get(0).name);
+        Assert.areEqual('Analyst', employees.get(1).name);
+        Assert.areEqual('Director', employees.get(2).name);
+        Assert.areEqual('Manager', employees.get(3).name);
+        Assert.areEqual('Vice Presidente', employees.get(4).name);
+        Assert.areNotEqual('Adivisor', employees.get(3).name);
+
+    }
+
 }
